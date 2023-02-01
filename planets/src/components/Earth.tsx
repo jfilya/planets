@@ -16,21 +16,13 @@ export default function Earth() {
   const { nodes, materials } = useGLTF("earth/earth.gltf");
 
   return (
-    <group rotation={[-Math.PI / 2, 0, 0]}>
-      <group rotation={[Math.PI / 2, 0, 0]}>
-        <group rotation={[-Math.PI / 2, 0, 0]}>
-          <mesh
-            ref={
-              meshRef as unknown as Ref<
-                Mesh<BufferGeometry, Material | Material[]>
-              >
-            }
-            geometry={(nodes.Object_6 as Mesh).geometry}
-            material={materials["Planet"]}
-          />
-        </group>
-      </group>
-    </group>
+    <mesh
+      ref={
+        meshRef as unknown as Ref<Mesh<BufferGeometry, Material | Material[]>>
+      }
+      geometry={(nodes.Object_6 as Mesh).geometry}
+      material={materials["Planet"]}
+    />
   );
 }
 

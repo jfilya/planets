@@ -1,11 +1,12 @@
 import { Canvas } from "@react-three/fiber";
-import Earth from "./components/Earth";
-import Header from "./components/Header";
 import { OrbitControls } from "@react-three/drei";
-
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 
+import Header from "./components/Header";
+import Earth from "./components/Earth";
+import Mercury from "./components/Mercury";
+import Venus from "./components/Venus";
 class App extends React.Component {
   render() {
     return (
@@ -21,19 +22,23 @@ class App extends React.Component {
           <directionalLight position={[-1, 1, 1]} intensity={0.8} />
 
           <OrbitControls />
-          <Routes>
-          <Route path="/" element='Hello' />
-            <Route path="/Mercury" element={<Earth />} />
-            <Route path="/Venus" element={<Earth />} />
-            <Route path="/Earth" element={<Earth />} />
-            <Route path="/Mars" element={<Earth />} />
-            <Route path="/Jupiter" element={<Earth />} />
-            <Route path="/Saturn" element={<Earth />} />
-            <Route path="/Uranus" element={<Earth />} />
-            <Route path="/Neptune" element={<Earth />} />
-          </Routes>
-          
-          
+          <group rotation={[-Math.PI / 2, 0, 0]}>
+            <group rotation={[Math.PI / 2, 0, 0]}>
+              <group rotation={[-Math.PI / 2, 0, 0]}>
+                <Routes>
+                  <Route path="/" element={""} />
+                  <Route path="/Mercury-palent" element={<Mercury />} />
+                  <Route path="/Venus-palent" element={<Venus />} />
+                  <Route path="/Earth-palent" element={<Earth/>} />
+                  <Route path="/Mars-palent" element={<Earth />} />
+                  <Route path="/Jupiter-palent" element={<Earth />} />
+                  <Route path="/Saturn-palent" element={<Earth />} />
+                  <Route path="/Uranus-palent" element={<Earth />} />
+                  <Route path="/Neptune-palent" element={<Earth />} />
+                </Routes>
+              </group>
+            </group>
+          </group>
         </Canvas>
       </div>
     );

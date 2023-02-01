@@ -6,28 +6,28 @@ class Header extends React.Component {
       <header className="header">
         <ul>
           <li>
-            <Link to="/Mercury">Mercury</Link>
+            <Link to="/Mercury-palent">Mercury</Link>
           </li>
           <li>
-            <Link to="/Venus">Venus</Link>
+            <Link to="/Venus-palent">Venus</Link>
           </li>
           <li>
-            <Link to="/Earth">Earth</Link>
+            <Link to="/Earth-palent">Earth</Link>
           </li>
           <li>
-            <Link to="/Mars">Mars</Link>
+            <Link to="/Mars-palent">Mars</Link>
           </li>
           <li>
-            <Link to="/Jupiter">Jupiter</Link>
+            <Link to="/Jupiter-palent">Jupiter</Link>
           </li>
           <li>
-            <Link to="/Saturn">Saturn</Link>
+            <Link to="/Saturn-palent">Saturn</Link>
           </li>
           <li>
-            <Link to="/Uranus">Uranus</Link>
+            <Link to="/Uranus-palent">Uranus</Link>
           </li>
           <li>
-            <Link to="/Neptune">Neptune</Link>
+            <Link to="/Neptune-palent">Neptune</Link>
           </li>
         </ul>
       </header>
