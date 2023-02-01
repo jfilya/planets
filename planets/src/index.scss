@@ -16,6 +16,30 @@ body,
   margin: 0;
   padding: 0;
 }
-canvas{
+canvas {
   height: 100vh;
+}
+.header {
+  max-width: 920px;
+  margin: 50px auto;
+  background: transparent;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    shape-outside: circle(50%);
+    li {
+      a {
+        font-size: 20px;
+        cursor: pointer;
+        transition: 0.5s;
+        color:#fff;
+        text-decoration: none;
+        &:hover {
+          color: rgb(51, 0, 255);
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
 }
