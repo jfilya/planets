@@ -5,6 +5,9 @@ class Header extends React.Component {
     return (
       <header className="header">
         <ul>
+        <li>
+            <Link to="/">Solar</Link>
+          </li>
           <li>
             <Link to="/Mercury-palent">Mercury</Link>
           </li>
