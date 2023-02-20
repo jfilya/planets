@@ -8,6 +8,7 @@ import Earth from "./components/Earth";
 import Mercury from "./components/Mercury";
 import Venus from "./components/Venus";
 import Mars from "./components/Mars";
+import Jupiter from "./components/Jupiter";
 class App extends React.Component {
   render() {
     return (
@@ -32,7 +33,7 @@ class App extends React.Component {
                   <Route path="/Venus-palent" element={<Venus />} />
                   <Route path="/Earth-palent" element={<Earth/>} />
                   <Route path="/Mars-palent" element={<Mars />} />
-                  <Route path="/Jupiter-palent" element={<Earth />} />
+                  <Route path="/Jupiter-palent" element={<Jupiter/>} />
                   <Route path="/Saturn-palent" element={<Earth />} />
                   <Route path="/Uranus-palent" element={<Earth />} />
                   <Route path="/Neptune-palent" element={<Earth />} />
