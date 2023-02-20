@@ -16,13 +16,16 @@ export default function Earth() {
   const { nodes, materials } = useGLTF("earth/earth.gltf");
 
   return (
+    <>
+    <mesh geometry={(nodes.Object_4 as Mesh).geometry} material={materials.Planet} />
     <mesh
       ref={
         meshRef as unknown as Ref<Mesh<BufferGeometry, Material | Material[]>>
       }
-      geometry={(nodes.Object_6 as Mesh).geometry}
-      material={materials["Planet"]}
+      geometry={(nodes.Object_6 as Mesh).geometry} material={materials.Clouds} scale={1.02}
     />
+
+    </>
   );
 }
 
