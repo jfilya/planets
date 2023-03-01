@@ -3,10 +3,12 @@ body {
   width: 100%;
   height: 100%;
   color: #fff;
+  position: relative;
+  min-width: 700px;
 }
 * {
   box-sizing: border-box;
-  margin:0;
+  margin: 0;
   padding: 0;
 }
 
@@ -18,13 +20,21 @@ body,
   margin: 0;
   padding: 0;
 }
+.App,
 canvas {
   height: 100vh;
 }
 .header {
-  max-width: 920px;
-  margin: 50px auto;
   background: transparent;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  padding: 35px 10px;
+  background: transparent;
+  max-width: 980px;
+  left:50%;
+  transform: translateX(-50%);
   ul {
     display: flex;
     justify-content: space-between;
@@ -35,7 +45,7 @@ canvas {
         font-size: 20px;
         cursor: pointer;
         transition: 0.5s;
-        color:#fff;
+        color: #fff;
         text-decoration: none;
         &:hover {
           color: rgb(51, 0, 255);
