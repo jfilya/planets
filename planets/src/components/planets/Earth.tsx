@@ -20,17 +20,9 @@ export default function Earth() {
       ref={
         meshRef as unknown as Ref<Mesh<BufferGeometry, Material | Material[]>>
       }
-    >
-      <mesh
-        geometry={(nodes.Object_4 as Mesh).geometry}
-        material={materials.Planet}
-      />
-      <mesh
-        geometry={(nodes.Object_6 as Mesh).geometry}
-        material={materials.Clouds}
-        scale={1.02}
-      />
-    </mesh>
+      geometry={(nodes.pSphere1_lambert3_0 as Mesh).geometry}
+      material={materials.lambert3}
+    />
   );
 }
 

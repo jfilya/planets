@@ -1,11 +1,11 @@
 Model Information:
-* title:	Fake Space
-* source:	https://sketchfab.com/3d-models/fake-space-d165714f85d14c5b9bc3da8c43d5f89f
-* author:	Blender3D (https://sketchfab.com/Blender3D)
+* title:	Sky Pano - Milkyway
+* source:	https://sketchfab.com/3d-models/sky-pano-milkyway-0016725c047a4ea18cd0b5e5ef2fe441
+* author:	MozillaHubs (https://sketchfab.com/mozillareality)
 
 Model License:
-* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
-* requirements:	Author must be credited. Commercial use is allowed.
+* license type:	CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)
+* requirements:	Author must be credited. No commercial use. Modified versions must have the same license.
 
 If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
-This work is based on "Fake Space" (https://sketchfab.com/3d-models/fake-space-d165714f85d14c5b9bc3da8c43d5f89f) by Blender3D (https://sketchfab.com/Blender3D) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+This work is based on "Sky Pano - Milkyway" (https://sketchfab.com/3d-models/sky-pano-milkyway-0016725c047a4ea18cd0b5e5ef2fe441) by MozillaHubs (https://sketchfab.com/mozillareality) licensed under CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)

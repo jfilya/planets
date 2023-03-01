@@ -33,8 +33,7 @@ function App() {
           <group rotation={[Math.PI / 2, 0, 0]}>
             <group rotation={[-Math.PI / 2, 0, 0]}>
               <mesh
-                geometry={(nodes.Object_19 as Mesh).geometry}
-                material={materials.SPace}
+                geometry={(nodes.PanoSphere_lambert1_0 as Mesh).geometry} material={materials.lambert1}
               >
                 <Routes>
                   <Route path="/" element={<Solar />} />
