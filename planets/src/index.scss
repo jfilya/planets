@@ -55,3 +55,8 @@ canvas {
     }
   }
 }
+.header ul .active-planets a{
+  color:blue;
+  zoom: 1.1;
+  transition: .5s;
+}
