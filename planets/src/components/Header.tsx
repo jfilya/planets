@@ -1,21 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
 const Header = () => {
-  const [items, setItems] = React.useState(0);
+  
   React.useEffect(() => {
-  const links = document.querySelectorAll('li');
-  links[items].classList.add('active-planets')
-  links.forEach((link, index, array) => {
-    link.onclick = () => {
-      setItems(index);
-      array.forEach(el => {
-        el.classList.remove('active-planets')
-      })
-    }
-  })
-  
-  
-});
+    let items = Number(localStorage.getItem('items')? localStorage.getItem('items') : 0);
+    const links = document.querySelectorAll("li");
+    links[items].classList.add("active-planets");
+    links.forEach((link, index, array) => {
+      items = index;
+      link.onclick = () => {
+        array.forEach((el) => {
+          el.classList.remove("active-planets");
+        });
+        links[index].classList.add("active-planets");
+        localStorage.setItem('items', `${index}`);
+      };
+    });
+  });
   return (
     <header className="header">
       <ul>
