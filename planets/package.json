@@ -2,6 +2,7 @@
   "name": "planets",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://jfilya.github.io/planets/",
   "dependencies": {
     "@react-three/drei": "^9.56.10",
     "@react-three/fiber": "^8.10.1",
@@ -15,12 +16,15 @@
     "node-sass": "^7.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.8.2",
     "react-scripts": "5.0.1",
     "three": "^0.149.0",
     "typescript": "^4.9.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -45,6 +49,7 @@
     ]
   },
   "devDependencies": {
-    "@types/three": "^0.148.1"
+    "@types/three": "^0.148.1",
+    "gh-pages": "^5.0.0"
   }
 }

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   
   React.useEffect(() => {
-    let items = Number(localStorage.getItem('items')? localStorage.getItem('items') : 0);
+    let items = Number(sessionStorage.getItem('items')? sessionStorage.getItem('items') : 0);
     const links = document.querySelectorAll("li");
     links[items].classList.add("active-planets");
     links.forEach((link, index, array) => {
@@ -13,11 +13,12 @@ const Header = () => {
           el.classList.remove("active-planets");
         });
         links[index].classList.add("active-planets");
-        localStorage.setItem('items', `${index}`);
+        sessionStorage.setItem('items', `${index}`);
       };
     });
   });
   return (
+    
     <header className="header">
       <ul>
         <li>
